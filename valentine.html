@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>💖 Una domanda...</title>
+
+<style>
+body {
+    background-color: #ffe6f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #cc0066;
+}
+
+img {
+    width: 250px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 25px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#no {
+    position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Vuoi essere il mio San Valentino Giamm ? 💘</h1>
+
+<img src="foto.jpg" alt="foto romantica">
+
+<br>
+
+<button onclick="alert('Sapevo che avresti detto SÌ! 💕')">
+    SÌ 💖
+</button>
+
+<button id="no" onmouseover="scappa()">
+    NO 😅
+</button>
+
+<script>
+function scappa() {
+    const x = Math.random() * (window.innerWidth - 120);
+    const y = Math.random() * (window.innerHeight - 120);
+    document.getElementById("no").style.left = x + "px";
+    document.getElementById("no").style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
